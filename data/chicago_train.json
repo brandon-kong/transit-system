@@ -4,6 +4,7 @@
             "id": 1,
             "name": "Howard",
             "line": "red",
+            "isEndStation": true,
 
             "geometry": {
                 "type": "Point",
@@ -724,6 +725,8 @@
             "id": 33,
             "name": "95th/Dan Ryan",
             "line": "red",
+            "isEndStation": true,
+
 
             "geometry": {
                 "coordinates": [-87.62438028, 41.72147125]
@@ -741,6 +744,7 @@
             "id": 34,
             "name": "Howard",
             "line": "yellow",
+            "isEndStation": true,
 
             "geometry": {
                 "type": "Point",
@@ -749,8 +753,12 @@
 
             "connections": [
                 {
-                    "station_id": 2,
-                    "cost": 2.50
+                    "station_id": 1,
+                    "cost": 0.00
+                },
+                {
+                    "station_id": 35,
+                    "cost": 0.00
                 }
             ]
         },
@@ -768,7 +776,11 @@
             "connections": [
                 {
                     "station_id": 34,
-                    "cost": 2.50
+                    "cost": 0.00
+                },
+                {
+                    "station_id": 36,
+                    "cost": 0.00
                 }
             ]
         },
@@ -777,6 +789,7 @@
             "id": 36,
             "name": "Dempster-Skokie",
             "line": "yellow",
+            "isEndStation": true,
 
             "geometry": {
                 "type": "Point",
@@ -786,7 +799,7 @@
             "connections": [
                 {
                     "station_id": 35,
-                    "cost": 2.50
+                    "cost": 0.00
                 }
             ]
         },
