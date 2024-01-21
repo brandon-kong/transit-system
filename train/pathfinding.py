@@ -22,6 +22,7 @@ def get_closest_path(graph, start: int, end: int):
 
     shortest_distances = {start: 0}
     total_distance = 0
+    transfer_penalty = 1000
  
     while queue:
         (distance, path) = heapq.heappop(queue)
@@ -35,6 +36,11 @@ def get_closest_path(graph, start: int, end: int):
             for edge in graph[vertex]:
                 total_distance = distance + edge['weight']
                 adjacent = edge['id']
+
+                # If the adjacent vertex is on a different line, we add a transfer penalty
+            
+                if (edge['isTransfer'] and adjacent != end):
+                    total_distance += transfer_penalty
 
                 # If the total distance to adjacent vertex is shorter than any previously recorded distance, we update it
                 if total_distance < shortest_distances.get(adjacent, float('inf')):

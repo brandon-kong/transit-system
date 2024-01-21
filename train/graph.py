@@ -5,6 +5,8 @@ from .pathfinding import ( calculate_distance)
 import json
 
 weight_factor = 2.34
+cost_factor = 1.5
+transfer_factor = 5
 
 class TrainGraph:
     stations = []
@@ -24,21 +26,29 @@ class TrainGraph:
             self.graph[vertex] = []
 
         distance = self.get_distance(vertex, vertex2) or 1
+        sameLine = False
         cost = 0
 
         station1 = self.get_station_by_id(vertex)
+        station2 = self.get_station_by_id(vertex2)
 
         if station1 is None:
             return
+        
+        if station2 is None:
+            return
+        
+        if station1['line'] == station2['line']:
+            sameLine = True
 
         for edge in station1['connections']:
             if edge['station_id'] == vertex2:
                 cost = edge['cost']
                 break
 
-        weight = self.calculate_weight(distance, cost)
+        weight = self.calculate_weight(distance, cost, sameLine)
         
-        self.graph[vertex].append({'id': vertex2, 'weight': weight})
+        self.graph[vertex].append({'id': vertex2, 'weight': weight, 'isTransfer': not sameLine})
 
     def get_graph(self):
         return self.graph
@@ -111,9 +121,29 @@ class TrainGraph:
 
         return dist
     
-    def calculate_weight(self, distance, cost):
-        weight = distance #* weight_factor + cost
+    def calculate_weight(self, distance, cost, sameLine):
+        transfer_penalty = 0 if sameLine else 100
+        weight = distance * weight_factor + cost * cost_factor + transfer_penalty * transfer_factor
         return weight
+    
+    def station_id_list_to_english(self, station_id_list):
+        station_list = []
+        prev_station = None
+
+        for station_id in station_id_list:
+            station = self.get_station_by_id(station_id)
+
+            if station is None:
+                continue
+
+            if (prev_station is not None):
+                if (prev_station['line'] != station['line']):
+                    station_list.append(f"Transfer to {station['line']} line")
+            
+            station_list.append(station['name'])
+            prev_station = station
+
+        return station_list
 
 
     def __str__(self):
@@ -150,6 +180,13 @@ class TrainGraph:
 def load_graph(filename):
     with open(filename, 'r') as f:
         data = json.load(f)
+
+        if (data is None):
+            raise ValueError('Invalid JSON data: no stations found')
+    
+    if ('stations' not in data):
+        raise ValueError('Invalid JSON data: no stations found')
+    
     graph = TrainGraph()
 
     # initialize vertices first
