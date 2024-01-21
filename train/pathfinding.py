@@ -21,14 +21,14 @@ def get_closest_path(graph, start: int, end: int):
     
     queue = [(0, [start])]
 
+    actual_distances = {start: 0}
     shortest_distances = {start: 0}
     total_distance = 0
-    accumulated_distance = 0
 
     # safety penalties
     safety_penalties = calculate_safety_penalties('data/user_reports.json', graph.stations)
-    station_penalty = 8
-    transfer_penalty = 8
+    station_penalty = 6
+    transfer_penalty = 18
  
     while queue:
         (distance, path) = heapq.heappop(queue)
@@ -36,11 +36,17 @@ def get_closest_path(graph, start: int, end: int):
 
         if distance <= shortest_distances.get(vertex, float('inf')):
             if vertex == end:
-                print(f"Total distance: {accumulated_distance}km")
+                print(f"Total distance: {actual_distances[end]}km")
+                print(f"Total stops: {len(path)}")
+                print(f"Total transfers: {len(path) - 1}")
+                print(f"Total safety penalties: {sum(safety_penalties.get(station, 0) for station in path)}")
+                print(f"Total weight: {distance}")
+                
                 return path
             
             for edge in graph[vertex]:
-                accumulated_distance += edge['distance']
+                
+                actual_distance = actual_distances[vertex] + edge['distance']
                 total_distance = distance + edge['weight'] + station_penalty + safety_penalties.get(vertex, 0)
                 adjacent = edge['id']
 
@@ -53,5 +59,6 @@ def get_closest_path(graph, start: int, end: int):
                 if total_distance < shortest_distances.get(adjacent, float('inf')):
                     heapq.heappush(queue, (total_distance, path + [adjacent]))
                     shortest_distances[adjacent] = total_distance
+                    actual_distances[adjacent] = actual_distance
 
     return None

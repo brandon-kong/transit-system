@@ -9,8 +9,8 @@ from pytz import timezone
 from datetime import datetime, time
 from util.settings import ( DEBUG )
 
-weight_factor = 2
-cost_factor = 5
+weight_factor = 10
+cost_factor = 25
 transfer_factor = 1
 
 rush_hours = {
@@ -35,7 +35,7 @@ class TrainGraph:
         if vertex not in self.graph:
             self.graph[vertex] = []
 
-        distance = self.get_distance(vertex, vertex2) or 1
+        distance = self.get_distance(vertex, vertex2) or 0
         sameLine = False
         cost = 0
 
@@ -149,7 +149,7 @@ class TrainGraph:
     
     def calculate_weight(self, distance, cost, sameLine):
         transfer_penalty = 0 if sameLine else 100
-        weight = distance * weight_factor + cost * cost_factor + transfer_penalty * transfer_factor
+        weight = distance * weight_factor + cost * cost_factor
         return weight
     
     def station_id_list_to_english(self, station_id_list):
