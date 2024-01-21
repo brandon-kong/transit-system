@@ -4,7 +4,7 @@
 - [ ] Blue line
 - [ ] Green line
 - [x] Yellow line
-- [ ] Purple line
+- [x] Purple line
 - [ ] Orange line
 - [ ] Brown line
 - [ ] Pink line
