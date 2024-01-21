@@ -1,4 +1,5 @@
 from util.normalize import normalize_string as _
+from util.safety_report import calculate_safety_penalties
 
 import heapq
 import math
@@ -24,8 +25,10 @@ def get_closest_path(graph, start: int, end: int):
     total_distance = 0
     accumulated_distance = 0
 
-    station_penalty = 100
-    transfer_penalty = 1000
+    # safety penalties
+    safety_penalties = calculate_safety_penalties('data/user_reports.json', graph.stations)
+    station_penalty = 8
+    transfer_penalty = 8
  
     while queue:
         (distance, path) = heapq.heappop(queue)
@@ -37,9 +40,8 @@ def get_closest_path(graph, start: int, end: int):
                 return path
             
             for edge in graph[vertex]:
-                print(edge, edge['distance'])
                 accumulated_distance += edge['distance']
-                total_distance = distance + edge['weight'] + station_penalty
+                total_distance = distance + edge['weight'] + station_penalty + safety_penalties.get(vertex, 0)
                 adjacent = edge['id']
 
                 # If the adjacent vertex is on a different line, we add a transfer penalty
@@ -53,21 +55,3 @@ def get_closest_path(graph, start: int, end: int):
                     shortest_distances[adjacent] = total_distance
 
     return None
-
-
-def calculate_distance(lat1, lon1, lat2, lon2):
-    R = 6371.0
-
-    lat1_rad = math.radians(lat1)
-    lon1_rad = math.radians(lon1)
-    lat2_rad = math.radians(lat2)
-    lon2_rad = math.radians(lon2)
-
-    dlat = lat2_rad - lat1_rad
-    dlon = lon2_rad - lon1_rad
-
-    a = math.sin(dlat / 2)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlon / 2)**2
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-
-    distance = R * c
-    return distance

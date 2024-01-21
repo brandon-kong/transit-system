@@ -2,15 +2,16 @@
 
 from util.time import is_time_in_range
 from util.normalize import normalize_string as _
-from .pathfinding import ( calculate_distance)
+from util.distance import calculate_distance
+
 import json
 from pytz import timezone
 from datetime import datetime, time
 from util.settings import ( DEBUG )
 
-weight_factor = 2.34
-cost_factor = 1000
-transfer_factor = 5
+weight_factor = 2
+cost_factor = 5
+transfer_factor = 1
 
 rush_hours = {
     'Linden_to_Loop': [(time(5, 0), time(9, 15)), (time(14, 10), time(18, 25))],

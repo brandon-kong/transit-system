@@ -4,7 +4,7 @@ from util.normalize import normalize_string as _
 from util.input_parser import parse_input
 
 def main():
-    graph = load_graph('data/chicago_train.json')
+    graph = load_graph('data/chicago/chicago_train.json')
     
     start_station, start_line = parse_input(input('Enter start station: '))
 
