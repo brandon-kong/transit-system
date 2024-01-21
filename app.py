@@ -17,7 +17,6 @@ def main():
     
     end_station, end_line = parse_input(input('Enter end station: '))
 
-    print(end_station, end_line)
     end_station = graph.get_station(end_station, end_line)
     end_station_id = end_station['id'] if end_station is not None else None
 

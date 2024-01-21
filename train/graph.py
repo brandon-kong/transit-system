@@ -1,12 +1,20 @@
 # Create the graph representation of the Chicago train system
 
+from util.time import is_time_in_range
 from util.normalize import normalize_string as _
 from .pathfinding import ( calculate_distance)
 import json
+from pytz import timezone
+from datetime import datetime, time
 
 weight_factor = 2.34
 cost_factor = 1.5
 transfer_factor = 5
+
+rush_hours = {
+    'Linden_to_Loop': [(time(5, 0), time(9, 15)), (time(14, 10), time(18, 25))],
+    'Loop_to_Linden': [(time(5, 55), time(10, 10)), (time(15, 0), time(19, 15))]
+}
 
 class TrainGraph:
     stations = []
@@ -40,6 +48,21 @@ class TrainGraph:
         
         if station1['line'] == station2['line']:
             sameLine = True
+
+        if (station1.get('rushPeriodOnly') or station2.get('rushPeriodOnly')):
+            # get time
+            cst_time = datetime.now(timezone('America/Chicago'))
+
+            if (cst_time.weekday() <= 5):
+                # there is no express service saturday or sunday
+                return
+
+            for direction, periods in rush_hours.items():
+                for start, end in periods:
+                    if is_time_in_range(start, end):
+                        print(f"It's rush hour from {direction.replace('_', ' ')}")
+            pass
+
 
         for edge in station1['connections']:
             if edge['station_id'] == vertex2:
