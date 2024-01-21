@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "geometry": {
+            "coordinates": [
+                -87.62944,
+                41.885737
+            ]
+        },
+
+        "safety_type": "Theft",
+        "description": "Wallet stolen on the platform",
+        "severity_level": "High",
+        "date_of_report": "2024-01-01"
+    },
+
+    {
+        "id": 2,
+        "geometry": {
+            "coordinates": [
+                -87.67258875,
+                42.01892011
+            ]
+        },
+        
+        "safety_type": "Assault",
+        "description": "Physical altercation between two passengers at Howard",
+        "severity_level": "Critical",
+        "date_of_report": "2024-01-01"
+    },
+
+    {
+        "id": 3,
+        "geometry": {
+            "coordinates": [
+                -87.63398441,
+                41.88899454
+            ]
+        },
+        
+        "safety_type": "Assault",
+        "description": "Physical altercation between two passengers at Merchandise Mart",
+        "severity_level": "Critical",
+        "date_of_report": "2024-01-01"
+    }
+]

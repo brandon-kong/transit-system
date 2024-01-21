@@ -1,0 +1,2066 @@
+{
+    "stations": [
+        {
+            "id": 1,
+            "name": "Howard",
+            "line": "red",
+            "isEndStation": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.67258875,
+                    42.01892011
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 2,
+                    "cost": 0
+                },
+                {
+                    "station_id": 34,
+                    "cost": 0
+                },
+                {
+                    "station_id": 44,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Jarvis",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.669092,
+                    42.015876
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 1,
+                    "cost": 0
+                },
+                {
+                    "station_id": 3,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Morse",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.665909,
+                    42.008362
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 2,
+                    "cost": 0
+                },
+                {
+                    "station_id": 4,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Loyola",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.661061,
+                    42.001073
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 3,
+                    "cost": 0
+                },
+                {
+                    "station_id": 5,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Granville",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.659076,
+                    41.994431
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 4,
+                    "cost": 0
+                },
+                {
+                    "station_id": 6,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Thorndale",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.659132,
+                    41.990259
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 5,
+                    "cost": 0
+                },
+                {
+                    "station_id": 7,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Bryn Mawr",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.658493,
+                    41.984246
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 6,
+                    "cost": 0
+                },
+                {
+                    "station_id": 8,
+                    "cost": 0,
+                    "status": "closed"
+                },
+                {
+                    "station_id": 9,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Berwyn",
+            "line": "red",
+            "status": "closed",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.658777,
+                    41.977984
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 7,
+                    "cost": 0
+                },
+                {
+                    "station_id": 9,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Argyle",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.658668,
+                    41.973453
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 7,
+                    "cost": 0
+                },
+                {
+                    "station_id": 8,
+                    "cost": 0
+                },
+                {
+                    "station_id": 10,
+                    "cost": 0,
+                    "status": "closed"
+                },
+                {
+                    "station_id": 11,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Lawrence",
+            "line": "red",
+            "status": "closed",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.658493,
+                    41.969139
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 9,
+                    "cost": 0
+                },
+                {
+                    "station_id": 11,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Wilson",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.657588,
+                    41.964273
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 9,
+                    "cost": 0
+                },
+                {
+                    "station_id": 10,
+                    "cost": 0
+                },
+                {
+                    "station_id": 12,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Sheridan",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.654929,
+                    41.953775
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 11,
+                    "cost": 0
+                },
+                {
+                    "station_id": 13,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Addison",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.653626,
+                    41.947028
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 12,
+                    "cost": 0
+                },
+                {
+                    "station_id": 14,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Belmont",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 13,
+                    "cost": 0
+                },
+                {
+                    "station_id": 15,
+                    "cost": 0
+                },
+                {
+                    "station_id": 46,
+                    "cost": 0
+                },
+                {
+                    "station_id": 73,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Fullerton",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.652866,
+                    41.925051
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 14,
+                    "cost": 0
+                },
+                {
+                    "station_id": 16,
+                    "cost": 0
+                },
+                {
+                    "station_id": 49,
+                    "cost": 0
+                },
+                {
+                    "station_id": 76,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "name": "North/Clybourn",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.648088,
+                    41.910655
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 15,
+                    "cost": 0
+                },
+                {
+                    "station_id": 17,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Clark/Division",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630636,
+                    41.90392
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 16,
+                    "cost": 0
+                },
+                {
+                    "station_id": 18,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Chicago",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.628196,
+                    41.896671
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 17,
+                    "cost": 0
+                },
+                {
+                    "station_id": 19,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Grand",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.628021,
+                    41.891189
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 18,
+                    "cost": 0
+                },
+                {
+                    "station_id": 20,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "name": "Lake",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.627696,
+                    41.884809
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 19,
+                    "cost": 0
+                },
+                {
+                    "station_id": 21,
+                    "cost": 0
+                },
+                {
+                    "station_id": 55,
+                    "cost": 2.50
+                },
+                {
+                    "station_id": 87,
+                    "cost": 2.50
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Monroe",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.627835,
+                    41.880745
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 20,
+                    "cost": 0
+                },
+                {
+                    "station_id": 22,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Jackson",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.627479,
+                    41.878183
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 21,
+                    "cost": 0
+                },
+                {
+                    "station_id": 23,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Harrison",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.627479,
+                    41.874039
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 22,
+                    "cost": 0
+                },
+                {
+                    "station_id": 24,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Roosevelt",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.627141,
+                    41.867368
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 23,
+                    "cost": 0
+                },
+                {
+                    "station_id": 25,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Cermak-Chinatown",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.853206
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 24,
+                    "cost": 0
+                },
+                {
+                    "station_id": 26,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Sox-35th",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.831191
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 25,
+                    "cost": 0
+                },
+                {
+                    "station_id": 27,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "name": "47th",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.809209
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 26,
+                    "cost": 0
+                },
+                {
+                    "station_id": 28,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Garfield",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.795172
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 27,
+                    "cost": 0
+                },
+                {
+                    "station_id": 29,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "name": "63rd",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.780536
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 28,
+                    "cost": 0
+                },
+                {
+                    "station_id": 30,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "name": "69th",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.768367
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 29,
+                    "cost": 0
+                },
+                {
+                    "station_id": 31,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "name": "79th",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.750419
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 30,
+                    "cost": 0
+                },
+                {
+                    "station_id": 32,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "name": "87th",
+            "line": "red",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.630968,
+                    41.735372
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 31,
+                    "cost": 0
+                },
+                {
+                    "station_id": 33,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "name": "95th/Dan Ryan",
+            "line": "red",
+            "isEndStation": true,
+            "geometry": {
+                "coordinates": [
+                    -87.62438028,
+                    41.72147125
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 32,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Howard",
+            "line": "yellow",
+            "isEndStation": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.67258875,
+                    42.01892011
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 1,
+                    "cost": 0
+                },
+                {
+                    "station_id": 35,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Oakton-Skokie",
+            "line": "yellow",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.026243
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 34,
+                    "cost": 0
+                },
+                {
+                    "station_id": 36,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Dempster-Skokie",
+            "line": "yellow",
+            "isEndStation": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.040295
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 35,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "name": "Linden",
+            "line": "purple",
+            "isEndStation": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.672892,
+                    42.019063
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 38,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Central",
+            "line": "purple",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.026243
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 37,
+                    "cost": 0
+                },
+                {
+                    "station_id": 39,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "name": "Noyes",
+            "line": "purple",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.040295
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 38,
+                    "cost": 0
+                },
+                {
+                    "station_id": 40,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 40,
+            "name": "Foster",
+            "line": "purple",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.05347
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 39,
+                    "cost": 0
+                },
+                {
+                    "station_id": 41,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 41,
+            "name": "Davis",
+            "line": "purple",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.063987
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 40,
+                    "cost": 0
+                },
+                {
+                    "station_id": 42,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 42,
+            "name": "Main",
+            "line": "purple",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.063987
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 41,
+                    "cost": 0
+                },
+                {
+                    "station_id": 43,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 43,
+            "name": "South Boulevard",
+            "line": "purple",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.74722,
+                    42.063987
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 42,
+                    "cost": 0
+                },
+                {
+                    "station_id": 44,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 44,
+            "name": "Howard",
+            "line": "purple",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.67258875,
+                    42.01892011
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 43,
+                    "cost": 0
+                },
+                {
+                    "station_id": 45,
+                    "cost": 0
+                },
+                {
+                    "station_id": 1,
+                    "cost": 0
+                },
+                {
+                    "station_id": 34,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 45,
+            "name": "Wilson",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.657588,
+                    41.964273
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 44,
+                    "cost": 0
+                },
+                {
+                    "station_id": 46,
+                    "cost": 0
+                },
+                {
+                    "station_id": 11,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 46,
+            "name": "Belmont",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 45,
+                    "cost": 0
+                },
+                {
+                    "station_id": 47,
+                    "cost": 0
+                },
+                {
+                    "station_id": 14,
+                    "cost": 0
+                },
+                {
+                    "station_id": 73,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 47,
+            "name": "Wellington",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65345088,
+                    41.93625228
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 46,
+                    "cost": 0
+                },
+                {
+                    "station_id": 48,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 48,
+            "name": "Diversey",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65313973,
+                    41.93256053
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 47,
+                    "cost": 0
+                },
+                {
+                    "station_id": 49,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 49,
+            "name": "Fullerton",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.652866,
+                    41.925051
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 48,
+                    "cost": 0
+                },
+                {
+                    "station_id": 15,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 50,
+            "name": "Armitage",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 49,
+                    "cost": 0
+                },
+                {
+                    "station_id": 51,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 51,
+            "name": "Sedgwick",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 50,
+                    "cost": 0
+                },
+                {
+                    "station_id": 52,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 52,
+            "name": "Chicago",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.628196,
+                    41.896671
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 51,
+                    "cost": 0
+                },
+                {
+                    "station_id": 53,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 53,
+            "name": "Merchandise Mart",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63398441,
+                    41.88899454
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 52,
+                    "cost": 0
+                },
+                {
+                    "station_id": 54,
+                    "cost": 0
+                },
+                {
+                    "station_id": 80,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 54,
+            "name": "Clark/Lake",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 55,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "name": "State/Lake",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 56,
+                    "cost": 0
+                },
+                {
+                    "station_id": 87,
+                    "cost": 2.50
+                },
+                {
+                    "station_id": 20,
+                    "cost": 2.50
+                }
+            ]
+        },
+        {
+            "id": 56,
+            "name": "Washington/Wabash",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 57,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 57,
+            "name": "Adams/Wabash",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 58,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 58,
+            "name": "Harold Washington Library",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 59,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 59,
+            "name": "LaSalle/Van Buren",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 60,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 60,
+            "name": "Quincy",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 61,
+                    "cost": 0
+                }
+            ]
+        },
+        {
+            "id": 61,
+            "name": "Washington/Wells",
+            "line": "purple",
+            "rushPeriodOnly": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+            "connections": [
+                {
+                    "station_id": 53,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 62,
+            "name": "Kimball",
+            "line": "brown",
+            "isEndStation": true,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.713065,
+                    41.967901
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 63,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 63,
+            "name": "Kedzie",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.70604,
+                    41.965996
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 62,
+                    "cost": 0
+                },
+                {
+                    "station_id": 64,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 64,
+            "name": "Francisco",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.701644,
+                    41.966046
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 63,
+                    "cost": 0
+                },
+                {
+                    "station_id": 65,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 65,
+            "name": "Rockwell",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.694131,
+                    41.966115
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 64,
+                    "cost": 0
+                },
+                {
+                    "station_id": 66,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 66,
+            "name": "Western",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.688502,
+                    41.966163
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 65,
+                    "cost": 0
+                },
+                {
+                    "station_id": 67,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 67,
+            "name": "Damen",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.678639,
+                    41.966286
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 66,
+                    "cost": 0
+                },
+                {
+                    "station_id": 68,
+                    "cost": 0
+                }
+
+            ]
+        },
+
+        {
+            "id": 68,
+            "name": "Montrose",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.674051,
+                    41.961756
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 67,
+                    "cost": 0
+                },
+                {
+                    "station_id": 69,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 69,
+            "name": "Irving Park",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.666496,
+                    41.954521
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 68,
+                    "cost": 0
+                },
+                {
+                    "station_id": 70,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 70,
+            "name": "Addison",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.674642,
+                    41.947028
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 69,
+                    "cost": 0
+                },
+                {
+                    "station_id": 71,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 71,
+            "name": "Paulina",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.670907,
+                    41.943623
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 70,
+                    "cost": 0
+                },
+                {
+                    "station_id": 72,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 72,
+            "name": "Southport",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.663619,
+                    41.943744
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 71,
+                    "cost": 0
+                },
+                {
+                    "station_id": 73,
+                    "cost": 0
+                }
+
+            ]
+        },
+
+        {
+            "id": 73,
+            "name": "Belmont",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 72,
+                    "cost": 0
+                },
+                {
+                    "station_id": 74,
+                    "cost": 0
+                },
+                {
+                    "station_id": 14,
+                    "cost": 0
+                },
+                {
+                    "station_id": 46,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 74,
+            "name": "Wellington",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 73,
+                    "cost": 0
+                },
+                {
+                    "station_id": 75,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 75,
+            "name": "Diversey",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 74,
+                    "cost": 0
+                },
+                {
+                    "station_id": 76,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 76,
+            "name": "Fullerton",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.652866,
+                    41.925051
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 75,
+                    "cost": 0
+                },
+                {
+                    "station_id": 77,
+                    "cost": 0
+                },
+                {
+                    "station_id": 15,
+                    "cost": 0
+                },
+                {
+                    "station_id": 49,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 77,
+            "name": "Armitage",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 76,
+                    "cost": 0
+                },
+                {
+                    "station_id": 78,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 78,
+            "name": "Sedgwick",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65338,
+                    41.939751
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 77,
+                    "cost": 0
+                },
+                {
+                    "station_id": 79,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 79,
+            "name": "Chicago",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.628196,
+                    41.896671
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 78,
+                    "cost": 0
+                },
+                {
+                    "station_id": 80,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 80,
+            "name": "Merchandise Mart",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63398441,
+                    41.88899454
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 53,
+                    "cost": 0
+                },
+                {
+                    "station_id": 79,
+                    "cost": 0
+                },
+                {
+                    "station_id": 81,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 81,
+            "name": "Washington/Wells",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63378,
+                    41.882695
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 82,
+                    "cost": 0
+                },
+                {
+                    "station_id": 61,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 82,
+            "name": "Quincy",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63378,
+                    41.882695
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 83,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 83,
+            "name": "LaSalle/Van Buren",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63378,
+                    41.882695
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 84,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 84,
+            "name": "Harold Washington Library",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63378,
+                    41.882695
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 22,
+                    "cost": 2.50
+                },
+                {
+                    "station_id": 58,
+                    "cost": 0
+                },
+                {
+                    "station_id": 85,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 85,
+            "name": "Adams/Wabash",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63378,
+                    41.882695
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 57,
+                    "cost": 0
+                },
+                {
+                    "station_id": 86,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 86,
+            "name": "Washington/Wabash",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63378,
+                    41.882695
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 87,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 87,
+            "name": "State/Lake",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.63378,
+                    41.882695
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 20,
+                    "cost": 2.50
+                },
+                {
+                    "station_id": 55,
+                    "cost": 2.50
+                },
+                {
+                    "station_id": 88,
+                    "cost": 0
+                }
+            ]
+        },
+
+        {
+            "id": 88,
+            "name": "Clark/Lake",
+            "line": "brown",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.62944,
+                    41.885737
+                ]
+            },
+
+            "connections": [
+                {
+                    "station_id": 54,
+                    "cost": 0
+                },
+                {
+                    "station_id": 80,
+                    "cost": 0
+                }
+            ]
+        }
+    ]
+}
