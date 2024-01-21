@@ -22,6 +22,9 @@ def get_closest_path(graph, start: int, end: int):
 
     shortest_distances = {start: 0}
     total_distance = 0
+    accumulated_distance = 0
+
+    station_penalty = 100
     transfer_penalty = 1000
  
     while queue:
@@ -30,11 +33,13 @@ def get_closest_path(graph, start: int, end: int):
 
         if distance <= shortest_distances.get(vertex, float('inf')):
             if vertex == end:
-                print(f"Total distance: {shortest_distances[end]}km")
+                print(f"Total distance: {accumulated_distance}km")
                 return path
             
             for edge in graph[vertex]:
-                total_distance = distance + edge['weight']
+                print(edge, edge['distance'])
+                accumulated_distance += edge['distance']
+                total_distance = distance + edge['weight'] + station_penalty
                 adjacent = edge['id']
 
                 # If the adjacent vertex is on a different line, we add a transfer penalty

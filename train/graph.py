@@ -6,9 +6,10 @@ from .pathfinding import ( calculate_distance)
 import json
 from pytz import timezone
 from datetime import datetime, time
+from util.settings import ( DEBUG )
 
 weight_factor = 2.34
-cost_factor = 1.5
+cost_factor = 1000
 transfer_factor = 5
 
 rush_hours = {
@@ -46,10 +47,11 @@ class TrainGraph:
         if station2 is None:
             return
         
+
         if station1['line'] == station2['line']:
             sameLine = True
 
-        if (station1.get('rushPeriodOnly') or station2.get('rushPeriodOnly')):
+        if (not DEBUG and (station1.get('rushPeriodOnly') or station2.get('rushPeriodOnly'))):
             # get time
             cst_time = datetime.now(timezone('America/Chicago'))
 
@@ -61,7 +63,7 @@ class TrainGraph:
                 for start, end in periods:
                     if is_time_in_range(start, end):
                         print(f"It's rush hour from {direction.replace('_', ' ')}")
-            pass
+            
 
 
         for edge in station1['connections']:
@@ -71,7 +73,7 @@ class TrainGraph:
 
         weight = self.calculate_weight(distance, cost, sameLine)
         
-        self.graph[vertex].append({'id': vertex2, 'weight': weight, 'isTransfer': not sameLine})
+        self.graph[vertex].append({'id': vertex2, 'weight': weight, 'isTransfer': not sameLine, 'distance': distance })
 
     def get_graph(self):
         return self.graph
